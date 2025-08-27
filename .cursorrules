@@ -1,0 +1,31 @@
+---
+description: |
+  Проект: AI Logistics Hub (Казахстан).
+  Всегда учитывать опыт прошлого проекта AMZ Log Service.
+
+  Архитектура:
+  - Бэкенд: FastAPI.
+  - Airtable как основное хранилище тарифов и CRM.
+  - API-интеграции: tnved.info, keden.kz, Qichacha, Tianyancha.
+  - Telegram/Instagram боты для доступа к сервису.
+
+  Best practices:
+  - Бизнес-логику отделять от роутеров.
+  - Каждый endpoint в отдельном модуле (routers/).
+  - Использовать .env для API-ключей и конфигов.
+  - Вести ROADMAP.md и документацию по API.
+  - Логирование через FastAPI logging.
+
+  Ошибки, которых избегать:
+  - Не хардкодить ключи.
+  - Не смешивать бизнес-логику и роуты.
+  - Не забывать edge-case тесты.
+
+  Общие правила:
+  - Python, PEP8.
+  - Документировать модули (docstrings + README).
+  - Для графиков использовать только matplotlib (не seaborn).
+globs:
+  - "**/*.py"
+alwaysApply: true
+---
